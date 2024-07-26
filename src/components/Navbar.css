@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: space-around;
     height: 10vh;
-    background-color: #0b0b0b;
+    background-color: white;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0px;
@@ -31,14 +31,14 @@ body {
     padding: 10px;
   }
   .coolcream_header input[type=search]::-moz-placeholder {
-    color: #033043;
+    color: #925ff0;
   }
   .coolcream_header input[type=search]::placeholder {
-    color: #033043;
+    color: #925ff0;
   }
   .coolcream_header .navbar a {
     text-decoration: none;
-    color: #e9e3d5;
+    color: black;
     margin-right: 15px;
   }
   .coolcream_header .navbar a i {
