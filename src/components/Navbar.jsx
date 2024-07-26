@@ -2,7 +2,7 @@ import "./Navbar.css"
 const Navbar = ()=>{
     return(
         <header className="coolcream_header">
-        <img src="../src/assets/logo3.png" width="120px" alt="Logo" />
+        <img src="../src/assets/excelrstore.png" width="120px" alt="Logo" />
         <input type="search" placeholder="Search here..." />
         <div className="navbar">
             <a href="#"><i className="fa-solid fa-house"></i>Home</a>
