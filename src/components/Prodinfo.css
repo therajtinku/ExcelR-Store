@@ -1,3 +1,30 @@
-.hi{
-    color: red;
+.proddesc{
+    display: flex;
+}
+
+.prodimg{
+   margin-left: 3em;
+   margin-top: 3em;
+}
+
+.prodimg img{
+    width: 550px;
+    height: 550px;
+    object-fit:cover;
+    object-position: 0 0;
+}
+.pinfo{
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 780px;
+}
+.colsize{
+    display: flex;
+}
+.colsize .color{
+    margin-right: 350px;
+}
+.colsize select{
+    width: 300px;
+    height: 40px;
 }
