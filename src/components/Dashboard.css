@@ -1,0 +1,131 @@
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.product-carousel, .product-grid, .accessory-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product, .accessory {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img, .accessory img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: 0 0;
+    aspect-ratio: 1 / 1;
+}
+
+/* Exclusive Card */
+.exclusive {
+    margin: 20px; /* Adds a gap around the exclusive card */
+    gap: 10px;
+}
+
+.product h3, .accessory h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.discount {
+    color: red;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.product button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: darkviolet;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer address {
+    margin: 10px 0;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation arrow styles */
+.slick-prev, .slick-next {
+    font-size: 24px;
+    line-height: 1;
+    color: rgb(150, 26, 26);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: "FontAwesome";
+    content: '\f053'; /* FontAwesome left arrow */
+}
+
+.slick-next:before {
+    content: '\f054'; /* FontAwesome right arrow */
+}
