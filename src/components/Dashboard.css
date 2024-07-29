@@ -32,12 +32,12 @@ h2 {
 }
 
 .product img, .accessory img {
-    width: 100%;
-    height: auto;
+    width: 312px;
+    height: 312px;
     border-radius: 5px;
     object-fit: cover;
-    object-position: 0 0;
-    aspect-ratio: 1 / 1;
+    object-position: 50% 0;
+    /* aspect-ratio: 1 / 1; */
 }
 
 /* Exclusive Card */
@@ -64,7 +64,7 @@ h2 {
 }
 
 .product button {
-    background-color: purple;
+    background-color: #925ff0;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -74,7 +74,7 @@ h2 {
 }
 
 .product button:hover {
-    background-color: darkviolet;
+    background-color: #8052d6;
 }
 
 footer {
