@@ -11,7 +11,7 @@ const Navbar = ()=>{
             <a href="#"><i className="fa-solid fa-children"></i>Kids</a>
             <a href="#"><i className="fa-solid fa-heart"></i>Wishlist</a>
             <a href="#"><i className="fa-solid fa-cart-shopping"></i>Cart</a>
-            <a href="#"><i className="fa-solid fa-right-to-bracket"></i>Login/Signup</a>
+            <a href="#"><i className="fa-solid fa-right-to-bracket"></i>Login</a>
         </div>
         </header>
 
