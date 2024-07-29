@@ -68,10 +68,8 @@ const Billing = () => {
                     <label htmlFor="paymentMethod">Choose a payment method:</label>
                     <select id="paymentMethod" name="paymentMethod" value={paymentMethod} onChange={handlePaymentMethodChange} required>
                         <option value="creditCard">Credit Card</option>
-                        <option value="paytm">Paytm</option>
-                        <option value="phonepe">PhonePe</option>
-                        <option value="Gpay">GPay</option>
                         <option value="upi">UPI</option>
+                        <option value="cod">Cash on Delivery</option>
                     </select><br /><br />
 
                     {paymentMethod === "creditCard" && (
@@ -93,8 +91,8 @@ const Billing = () => {
                             <QRCode value={generateUPIQRString()} />
                         </div>
                     )}
-
-                    <label htmlFor="billingAddress">Billing Address (if different from shipping):</label>
+                    <hr /><hr />
+                    <label htmlFor="billingAddress">Billing Address:</label>
                     <input type="text" id="billingAddress" name="billingAddress" placeholder="Billing Address" /><br /><br />
 
                     <h3>Order Summary</h3>
