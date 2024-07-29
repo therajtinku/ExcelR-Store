@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border: 1px solid gray;
+}
+th , td{
+  padding:50px
+}
+img1{
+  position: absolute;
+  margin-right: 20px;
+  width: 20px;
+}
+h1{
+  padding-left: 20px;
+  
+}
+.wishlist , th{
+  margin-right:80px;
+  
+
+
+  
+
+}
