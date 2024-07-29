@@ -1,3 +1,4 @@
+import React from 'react';
 import './WishlistItem.jsx';
 
 const WishlistItem = ({item}) =>{

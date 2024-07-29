@@ -1,6 +1,7 @@
 import "./Navbar.jsx";
 import { useState } from "react";
-import './Wishlist.jsx';
+import 'WishlistItem from WishlistItem' ;
+import '/wishlist.css';
 
 const Wishlist = () => {
     const [wishlist, setWishlist] = useState([
