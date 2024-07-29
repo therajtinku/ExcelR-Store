@@ -40,6 +40,7 @@
     margin-right: 40px;
     border: 3px solid #925ff0;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .buynow{
@@ -52,4 +53,5 @@
     cursor: pointer;
     outline: none;
     border: none;
+    border-radius: 5px;
 }
