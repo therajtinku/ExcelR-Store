@@ -25,7 +25,7 @@ const Wishlist = () => {
             <td>$2999</td>
             <td style={{color:"green"}}>In Stock</td>
             <td>
-           <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Cart</a></button>
+           <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Add To Cart</a></button>
             </td>
             <td>
               <i className="fa-solid fa-circle-xmark"></i>
@@ -38,7 +38,7 @@ const Wishlist = () => {
             <td>$1999</td>
             <td style={{color:"green"}}>IN Stock</td>
             <td>
-              <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Cart</a></button>
+              <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Add To Cart</a></button>
             </td>
             <td>
               <i className="fa-solid fa-circle-xmark"></i>
@@ -52,7 +52,7 @@ const Wishlist = () => {
             <td>$1499</td>
             <td style={{color:"green"}}>IN Stock</td>
             <td>
-              <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Cart</a></button>
+              <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Add To Cart</a></button>
             </td>
             <td>
               <i className="fa-solid fa-circle-xmark"></i>
@@ -64,9 +64,9 @@ const Wishlist = () => {
               <img src="/src/assets/img-4.jpg" width="120px" height="100px" alt="Error" />
               White Sneakers</td>
             <td>$1499</td>
-            <td style={{color:"green"}}>IN Stock</td>
+            <td style={{color:"green" , fontWeight:"bold"}}>IN Stock</td>
             <td>
-              <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Cart</a></button>
+              <button style={{backgroundColor:"#925ff0", color:"whitesmoke", textalign:"center"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>Add To Cart</a></button>
             </td>
             <td>
               <i className="fa-solid fa-circle-xmark"></i>
