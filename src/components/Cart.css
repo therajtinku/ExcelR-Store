@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+  }
+  th{
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+  }
+  td{
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .total{
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: right;
+    padding: 8px;
+    font-weight: bold;
+  }
