@@ -6,7 +6,10 @@ body {
   font-weight: 500;
   font-style: normal;
 }
-th , td{
+thead{
+  width:100vw;
+}
+ td{
   text-align: left;
   padding: 15px;
   border-bottom: 1px solid gray;
@@ -14,6 +17,9 @@ th , td{
 th{
   background-color: #f2f2f2;
   width: 100vw;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid gray;
 }
 img1{
  width: 50px;

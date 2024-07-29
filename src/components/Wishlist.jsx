@@ -14,6 +14,7 @@ const Wishlist = () => {
             <th>PRICE</th>
             <th>STOCK STATUS</th>
             <th>ACTION</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
