@@ -5,5 +5,5 @@ import './index.css'
 import Navbar from './components/Navbar.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Navbar></Navbar>,
+  <Navbar></Navbar>
 )
