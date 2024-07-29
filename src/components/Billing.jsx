@@ -41,8 +41,8 @@ const Billing = ()=>{
             <label htmlFor="paymentMethod">Choose a payment method:</label>
             <select id="paymentMethod" name="paymentMethod" required>
                 <option value="creditCard">Credit Card</option>
-                <option value="paytm">PayPal</option>
-                <option value="phonepe">Phonepe</option>
+                <option value="paytm">Paytm</option>
+                <option value="phonepe">Phonpe</option>
                 <option value="Gpay">Gpay</option>
             </select><br /><br />
 

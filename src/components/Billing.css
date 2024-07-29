@@ -1,6 +1,5 @@
 Styles.css
 body {
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 20px;
@@ -8,7 +7,7 @@ body {
 
 .c1 {
     max-width: 600px;
-    margin: auto;
+    margin: 30px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -20,9 +19,6 @@ form {
     flex-direction: column;
 }
 
-label {
-    font-weight: bold;
-}
 
 input[type=text], input[type=email], input[type=tel], input[type=checkbox], select {
     width: 100%;
@@ -33,8 +29,8 @@ input[type=text], input[type=email], input[type=tel], input[type=checkbox], sele
     border-radius: 4px;
 }
 
-input[type=submit] {
-    background-color: #4CAF50;
+button {
+    background-color: #925ff0;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -43,24 +39,12 @@ input[type=submit] {
     font-size: 16px;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #8556da;
 }
 
-
-h2, h3 {
-    margin-bottom: 10px;
-}
 
 p {
     font-size: 14px;
 }
 
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
