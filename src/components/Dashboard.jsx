@@ -140,16 +140,21 @@ const Dashboard = () => {
             </main>
             <footer>
                 <div className="footer-content">
-                    <p>ExcelR STORE</p>
+                    <div className="imgfooter">
+                    <img src="../src/assets/excelrstore.png" alt="error" width="120px" style={{filter: "invert(100%)"}}/>
+                    </div>
+                    <div className="fooerinfo">
                     <address>
+                    <i class="fa-solid fa-location-dot"></i> &nbsp;
                         Banjara Hills, Road No 12, Hyderabad, 500034<br />
-                        +917013408368
+                        <i class="fa-solid fa-phone"></i> +917013408368
                     </address>
                     <div className="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                     </div>
+                </div>
                 </div>
                 <p>&copy; 2024 ExcelR Store Inc.</p>
             </footer>
