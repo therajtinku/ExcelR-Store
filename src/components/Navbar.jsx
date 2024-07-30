@@ -1,7 +1,7 @@
 import "./Navbar.css"
 const Navbar = ()=>{
     return(
-        <header className="coolcream_header">
+        <header className="excelrstore_header">
         <img src="../src/assets/excelrstore.png" width="120px" alt="Logo" />
         <input type="search" placeholder="Search here..." />
         <div className="navbar">

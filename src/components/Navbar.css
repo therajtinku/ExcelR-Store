@@ -7,7 +7,7 @@ body {
     font-style: normal;
   }
   
-  .coolcream_header {
+  .excelrstore_header {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -18,7 +18,7 @@ body {
     top: 0px;
     z-index: 100;
   }
-  .coolcream_header input[type=search] {
+  .excelrstore_header input[type=search] {
     width: 300px;
     height: 35px;
     border-radius: 5px;
@@ -30,18 +30,13 @@ body {
     background-repeat: no-repeat;
     padding: 10px;
   }
-  .coolcream_header input[type=search]::-moz-placeholder {
-    color: #925ff0;
-  }
-  .coolcream_header input[type=search]::placeholder {
-    color: #925ff0;
-  }
-  .coolcream_header .navbar a {
+  
+  .excelrstore_header .navbar a {
     text-decoration: none;
     color: black;
     margin-right: 15px;
   }
-  .coolcream_header .navbar a i {
+  .excelrstore_header .navbar a i {
     margin-right: 10px;
     color: #925ff0;
   }
