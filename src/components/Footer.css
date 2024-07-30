@@ -1,0 +1,43 @@
+footer{
+    background-color: black;
+    color: white;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 10px;
+}
+    .f11{
+        width: 180px;
+        height: 180px;
+        padding-top: 15px;
+        margin-right: 350px;
+    }
+    
+    
+    .para{
+        font-size: 27px;
+        font-family: sans-serif;
+    }
+    i{
+        margin-right: 10px;
+        font-size: larger;
+    }
+
+hr{
+    margin-left: 250px;
+    margin-right:250px;
+}
+.ft_ct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 2px;
+    font-size: 20px;
+    background-color: black;
+}
