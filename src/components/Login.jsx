@@ -5,7 +5,6 @@ import Navbar from "./Navbar"
 const Login = () => {
     return (
         <>
-        <Navbar></Navbar>
         <main className="login-page">
             <div className="login-container">
                 <h2>Log in to your account</h2>
