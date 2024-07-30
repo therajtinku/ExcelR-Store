@@ -25,7 +25,7 @@ body {
     border: none;
     outline: none;
     background-color: rgb(244, 238, 238);
-    background-image: url("searchicon.svg");
+    background-image: url("../src/assets/searchicon.svg");
     background-position: 270px 5px;
     background-repeat: no-repeat;
     padding: 10px;
