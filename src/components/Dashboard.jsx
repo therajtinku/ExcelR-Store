@@ -109,6 +109,17 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </section>
+
+                 {/* Mens Collection */}
+                 <section className="menscollection">
+                    <a href="#"><img src="../src/assets/mens.jpg" alt="error" width={1400}/></a>
+                 </section>
+
+                 {/* Women Collection */}
+                 <section className="womencollection">
+                    <a href="#"><img src="../src/assets/women.jpg" alt="error" width={1300}/></a>
+                 </section>
+
                 <section className="accessories">
                     <h2>A C C E S S O R I E S</h2>
                     <div className="accessory-grid">
@@ -132,7 +143,7 @@ const Dashboard = () => {
                     <p>ExcelR STORE</p>
                     <address>
                         Banjara Hills, Road No 12, Hyderabad, 500034<br />
-                        +91-7013408368
+                        +917013408368
                     </address>
                     <div className="social-links">
                         <a href="#">Facebook</a>

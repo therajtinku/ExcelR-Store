@@ -1,5 +1,7 @@
+main{
+    margin: 50px 30px;
+}
 .banner img {
-    margin-left: 25px;
     width: 1450px;
     border-radius: 5px;
 }
@@ -44,16 +46,17 @@ h2 {
     border-radius: 5px;
     object-fit: cover;
     object-position: 50% 0;
-    /* aspect-ratio: 1 / 1; */
 }
 
 /* Exclusive Card */
 .exclusive {
-    margin: 20px; 
+    /* margin: 20px;  */
     gap: 10px;
 }
 
-.exclusive-carousel{
+
+
+.exclusive-carousel, .footwear-carousel{
     overflow-x: scroll;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -91,6 +94,14 @@ h2 {
     background-color: #8052d6;
 }
 
+.menscollection img{
+    margin: 40px 10px;
+}
+
+.womencollection img{
+    margin: 0 60px;
+}
+
 .accessory:hover{
     scale: 1.08;
     margin-left: 15px;
@@ -98,6 +109,7 @@ h2 {
 }
 
 footer {
+    margin-top: 30px;
     background-color: #333;
     color: white;
     text-align: center;
