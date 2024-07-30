@@ -89,7 +89,7 @@ const Billing = () => {
                             <QRCode value={generateUPIQRString()} />
                         </div>
                     )}
-                    <hr /><hr />
+                    <br /><br />
                     <label htmlFor="billingAddress">Billing Address:</label>
                     <input type="text" id="billingAddress" name="billingAddress" placeholder="Billing Address" /><br /><br />
 

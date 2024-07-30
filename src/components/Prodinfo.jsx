@@ -1,9 +1,8 @@
-import Navbar from "./Navbar";
 import "./Prodinfo.css"
+import {Link} from "react-router-dom";
 const Prodinfo = ()=>{
     return(
         <>
-            <Navbar></Navbar>
             <div className="proddesc">
             <div className="prodimg">
             <img src="../src/assets/proddesc.jpg" alt="error" />
@@ -33,7 +32,7 @@ const Prodinfo = ()=>{
                 </select>
             </div>
                 <a href="#"><button className="cart">Add to Cart</button></a>
-                <a href="#"><button className="buynow">Buy Now</button></a>
+                <Link to="/billing"><button className="buynow">Buy Now</button></Link>
 
 
 

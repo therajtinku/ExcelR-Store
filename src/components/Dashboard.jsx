@@ -1,8 +1,9 @@
 import React from 'react';
 import './Dashboard.css';
-
+import {Link} from "react-router-dom";
 const Dashboard = () => {
     return (
+        <>
         <div>
             <main>
                 {/* banner section */}
@@ -18,7 +19,7 @@ const Dashboard = () => {
                             <img src="../src/assets/Exclusive1.jpg" alt="New Lenin Shirt" />
                             <h3>New Lenin Shirt</h3>
                             <p>Rs.2999/- <span className="discount">50% off</span></p>
-                            <button>Shop now</button>
+                            <Link to="/prodinfo"><button>Shop now</button></Link>
                         </div>
                         <div className="product">
                             <img src="../src/assets/Exclusive2.jpg" alt="Chikindari Kurta" />
@@ -137,6 +138,7 @@ const Dashboard = () => {
                 </section>
             </main>
         </div>
+        </>
     );
 };
 
