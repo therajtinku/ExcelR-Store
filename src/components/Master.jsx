@@ -8,7 +8,6 @@ const Master = ()=>{
         <>
         <Navbar></Navbar>
         <Dashboard></Dashboard>
-        <Billing></Billing>
 
             {/* <BrowserRouter>
             <Link to="/comp3">comp3</Link>

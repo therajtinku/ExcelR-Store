@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import QRCode from "qrcode.react";
-import Navbar from "./Navbar"; 
 import "./Billing.css";
 
 const Billing = () => {
@@ -33,7 +32,6 @@ const Billing = () => {
 
     return (
         <>
-            <Navbar />
             <div className="c1">
                 <h2>Billing Information</h2>
                 <form id="billingForm" onSubmit={handleSubmit}>
