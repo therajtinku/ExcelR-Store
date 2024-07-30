@@ -18,6 +18,13 @@ body {
     top: 0px;
     z-index: 100;
   }
+
+  .excelrstore_header img{
+    width: 120px;
+    height: 120px;
+
+  }
+
   .excelrstore_header input[type=search] {
     width: 300px;
     height: 35px;

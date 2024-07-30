@@ -8,7 +8,7 @@ const Dashboard = () => {
             <main>
                 {/* banner section */}
                 <section className="banner">
-                    <img src="../src/assets/banner3.png" alt="Exclusive online discounts await!" />
+                    <img src="../src/assets/banner3.png" alt="Exclusive online discounts await!"/>
                 </section>
 
                 {/* exclusive section */}

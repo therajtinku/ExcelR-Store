@@ -3,6 +3,7 @@ main{
 }
 .banner img {
     width: 1450px;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -96,10 +97,14 @@ h2 {
 
 .menscollection img{
     margin: 40px 10px;
+    width: 1400px;
+    height: auto;
 }
 
 .womencollection img{
     margin: 0 60px;
+    width: 1300px;
+    height: auto;
 }
 
 .accessory:hover{

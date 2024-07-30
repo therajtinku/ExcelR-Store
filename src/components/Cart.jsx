@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Cart.css';
-import Navbar from './Navbar';
-
+import {Link} from "react-router-dom";
 const Cart = () => {
   const [cartItems, setCartItems] = useState([
     {
@@ -43,7 +42,6 @@ const Cart = () => {
 
   return (
     <>
-    <Navbar></Navbar>
     <div className="cart-container">
       <h2>Shopping Cart</h2>
       <div className="cart-content">
@@ -98,7 +96,7 @@ const Cart = () => {
             <span>Total</span>
             <span>Rs. {calculateTotal().toFixed(2)}/-</span>
           </div>
-          <button className="buy-now-button">BUY NOW →</button>
+          <Link to="/billing"><button className="buy-now-button">BUY NOW →</button></Link>
         </div>
       </div>
     </div>

@@ -18,6 +18,13 @@
     margin-left: 2em;
     width: 780px;
 }
+.pinfo h2{
+   text-align: left;
+}
+.pinfo hr{
+   margin: 0;
+}
+
 .colsize{
     display: flex;
 }

@@ -31,7 +31,7 @@ const Prodinfo = ()=>{
                     <option value="large">Large</option>
                 </select>
             </div>
-                <a href="#"><button className="cart">Add to Cart</button></a>
+                <Link to="/cart"><button className="cart">Add to Cart</button></Link>
                 <Link to="/billing"><button className="buynow">Buy Now</button></Link>
 
 
