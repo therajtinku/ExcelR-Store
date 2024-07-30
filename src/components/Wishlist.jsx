@@ -40,35 +40,42 @@ const Wishlist = () => {
 
   return (
     <div className="wishlist-container">
-      <h1>WishList</h1>
-      <div className="wishlist-table">
-        <div className="table-header">
-          <div>PRODUCTS</div>
-          <div></div>
-          <div>PRICE</div>
-          <div>STOCK STATUS</div>
-          <div>ACTION</div>
-          <div></div>
-        </div>
-        {wishlist.map((item) => (
-          <div key={item.id} className="table-row">
-            <div className="product-image">
-              <img src={item.image} alt={item.name} />
-            </div>
-            <div>{item.name}</div>
-            <div>Rs.{item.price}</div>
-            <div style={{color:"green"}}>{item.stock}</div>
-            <div className="cart-button">
-            <button style={{backgroundColor:"#925ff0", color:"whitesmoke", textalign:"center"}}><a href="#"><i className="fa-solid fa-cart-shopping"></i>  &nbsp;  Add To Cart</a></button>
-          </div>
-            <div className="remove">
-               <i className="fa-solid fa-circle-xmark"
-                onClick={() => handleRemoveFromWishlist(item.id)}>
-                </i>
-            </div>
-          </div>
-        ))}
-      </div>
+      <table className="wishlist-table">
+        <thead>
+          <tr>
+            <th>PRODUCTS</th>
+            <th></th>
+            <th>PRICE</th>
+            <th>STOCK STATUS</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          {wishlist.map((item) => (
+            <tr key={item.id} className="table-row">
+              <td className="product-image">
+                <img src={item.image} alt={item.name} />
+              </td>
+              <td>{item.name}</td>
+              <td>Rs. {item.price}</td>
+              <td style={{ color: "green" }}>{item.stock}</td>
+              <td>
+                <button className="cart-button">
+                  <a href="#">
+                    <i className="fa-solid fa-cart-shopping"></i> Add To Cart
+                  </a>
+                </button>
+                <button
+                  className="remove-button"
+                  onClick={() => handleRemoveFromWishlist(item.id)}
+                >
+                  <i className="fa-solid fa-circle-xmark"></i>
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
