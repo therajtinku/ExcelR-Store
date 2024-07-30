@@ -57,6 +57,7 @@ input[type="password"] {
 
 .login-button {
     background-color: #925FF0;
+    width: 400px;
     color: #fff;
     padding: 12px;
     border: none;

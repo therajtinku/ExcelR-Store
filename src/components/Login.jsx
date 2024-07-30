@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login.css';
-import Navbar from "./Navbar"
+import {Link} from "react-router-dom";
 
 const Login = () => {
     return (
@@ -14,7 +14,7 @@ const Login = () => {
                     <label htmlFor="password">Password</label>
                     <input type="password" id="password" name="password" required />
                     <a href="#" className="forgot-password">Forget your password</a>
-                    <button type="submit" className="login-button">Log in</button>
+                    <Link to="/"><button type="submit" className="login-button">Log in</button></Link>
                 </form>
                 <div className="signup-link">
                     <p>Don't have an account?</p>

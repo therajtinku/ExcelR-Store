@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 import Prodinfo from "./Prodinfo";
 import Billing from "./Billing";
 import Cart from "./Cart"
+import Login from "./Login";
 const Master = ()=>{
     return(
         <>
@@ -16,6 +17,7 @@ const Master = ()=>{
                 <Route path="/billing" element={<Billing></Billing>}></Route>
                 <Route path="/prodinfo" element={<Prodinfo></Prodinfo>}></Route>
                 <Route path="/cart" element={<Cart></Cart>}></Route>
+                <Route path="/login" element={<Login></Login>}></Route>
                 </Routes>
             </BrowserRouter>
 

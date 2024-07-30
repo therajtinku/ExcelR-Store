@@ -13,7 +13,7 @@ const Navbar = ()=>{
             <a href="#"><i className="fa-solid fa-children"></i>Kids</a>
             <a href="#"><i className="fa-solid fa-heart"></i>Wishlist</a>
             <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i>Cart</Link>
-            <a href="#"><i className="fa-solid fa-right-to-bracket"></i>Login</a>
+            <Link to="/login"><i className="fa-solid fa-right-to-bracket"></i>Login</Link>
         </div>
         </header>
         </>
