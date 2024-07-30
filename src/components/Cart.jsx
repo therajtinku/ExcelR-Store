@@ -1,69 +1,105 @@
-import Navbar from './Navbar';
+import React, { useState } from 'react';
 import './Cart.css';
 
 const Cart = () => {
+  const [cartItems, setCartItems] = useState([
+    {
+      id: 1,
+      name: 'New Linen Shirt',
+      price: 299,
+      quantity: 1,
+      imageUrl: '../src/assets/img-1.jpg'
+    },
+    {
+      id: 2,
+      name: 'Chikindari Kurta',
+      price: 599,
+      quantity: 3,
+      imageUrl: '../src/assets/img-2.jpg'
+    }
+  ]);
+
+  const handleQuantityChange = (itemId, newQuantity) => {
+    setCartItems(prevItems => prevItems.map(item => 
+      item.id === itemId ? { ...item, quantity: newQuantity } : item
+    ));
+  };
+
+  const handleRemoveItem = (itemId) => {
+    setCartItems(prevItems => prevItems.filter(item => item.id !== itemId));
+  };
+
+  const calculateSubtotal = () => {
+    return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+  };
+
+  const calculateTotal = () => {
+    const subtotal = calculateSubtotal();
+    const discount = subtotal * 0.1; 
+    const tax = (subtotal - discount) * 0.033; 
+    return subtotal - discount + tax;
+  };
+
   return (
-    <>
-    <Navbar></Navbar>
-    
     <div className="cart-container">
-      <h1>Shopping Cart</h1>
-      {/* Add your cart items here */}
-    </div>
-    <div className='shopping-cart'>
-    <div className='product'>
-        <table>
+      <h2>Shopping Cart</h2>
+      <div className="cart-content">
+        <div className="cart-items">
+          <table>
             <thead>
-                <tr>
-                    <th>PRODUCT</th>
-                    <th>PRICE</th>
-                    <th>QUANTITY</th>
-                    <th>SUB-TOTAL</th>
-                </tr>
+              <tr>
+                <th>Products</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Sub-Total</th>
+              </tr>
             </thead>
             <tbody>
-                {/* Add your cart items here */}
-                <tr>
-                    <td>
-                        <img src="/src/assets/img-1.jpg" width="120px" height="100px" alt="New Lenin Shirt" />
-                        NEW Lenin Shirt
-                    </td>
-                    <td>$2999</td>
-                    <td>
-                        <input type="number" name="Quantity" min={1} max={10}/>
-                    </td>
-                    <td>
-                     <input type="number" name="Price" />
-                    </td>
+              {cartItems.map(item => (
+                <tr key={item.id}>
+                  <td>
+                    <img src={item.imageUrl} alt={item.name} />
+                    <span>{item.name}</span>
+                  </td>
+                  <td>Rs. {item.price}/-</td>
+                  <td>
+                    <button onClick={() => handleQuantityChange(item.id, item.quantity - 1)} disabled={item.quantity === 1}>-</button>
+                    <span>{item.quantity}</span>
+                    <button onClick={() => handleQuantityChange(item.id, item.quantity + 1)}>+</button>
+                  </td>
+                  <td>Rs. {(item.price * item.quantity).toFixed(2)}/-</td>
                 </tr>
-                <tr>
-                    <td>
-                        <img src="/src/assets/img-2.jpg" width="120px" height="100px" alt="New Lenin Shirt" />
-                        Chikindari Kurta
-                    </td>
-                    <td>$1999</td>
-                    <td>
-                        <input type="number" name="Quantity" min={1} max={10}/>
-                    </td>
-                    <td>
-                     <input type="number" name="Price" />
-                    </td>
-                </tr>
-                <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i class="fa-solid fa-arrow-left"></i>RETURN TO SHOP</a></button>
+              ))}
             </tbody>
-        </table>
+          </table>
+        </div>
+        <div className="cart-totals">
+          <h2>Cart Totals</h2>
+          <div className="total-item">
+            <span>Sub-total</span>
+            <span>Rs. {calculateSubtotal().toFixed(2)}/-</span>
+          </div>
+          <div className="total-item">
+            <span>Shipping</span>
+            <span>Free</span>
+          </div>
+          <div className="total-item">
+            <span>Discount</span>
+            <span>10%/</span>
+          </div>
+          <div className="total-item">
+            <span>Tax</span>
+            <span>3.3%</span>
+          </div>
+          <div className="total-item">
+            <span>Total</span>
+            <span>Rs. {calculateTotal().toFixed(2)}/-</span>
+          </div>
+          <button className="buy-now-button">BUY NOW →</button>
+        </div>
+      </div>
     </div>
-    <div className='total'>
-        <h2>TOTAL</h2>
-        <h3>Subtotal    Rs.4998</h3>
-        <h3>Shipping    $100</h3>
-        <h3>Discount    $0</h3>
-        <h3>Tax         $49.96</h3>
-        <h3>Total       Rs.5098</h3>
-        <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i class="fa-solid fa-arrow-right"></i> Buy Now</a></button>
-    </div>
-    </div>
-    </>
-    );
-    };
+  );
+};
+
 export default Cart;
