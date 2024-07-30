@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Cart.css';
+import Navbar from './Navbar';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([
@@ -41,6 +42,8 @@ const Cart = () => {
   };
 
   return (
+    <>
+    <Navbar></Navbar>
     <div className="cart-container">
       <h2>Shopping Cart</h2>
       <div className="cart-content">
@@ -99,6 +102,7 @@ const Cart = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
