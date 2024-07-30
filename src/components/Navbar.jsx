@@ -11,7 +11,7 @@ const Navbar = ()=>{
             <a href="#"><i className="fa-solid fa-chess-king"></i>Men</a>
             <a href="#"><i className="fa-solid fa-chess-queen"></i>Women</a>
             <a href="#"><i className="fa-solid fa-children"></i>Kids</a>
-            <a href="#"><i className="fa-solid fa-heart"></i>Wishlist</a>
+            <Link to="/wishlist"><i className="fa-solid fa-heart"></i>Wishlist</Link>
             <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i>Cart</Link>
             <Link to="/login"><i className="fa-solid fa-right-to-bracket"></i>Login</Link>
         </div>

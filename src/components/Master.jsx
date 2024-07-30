@@ -7,6 +7,7 @@ import Billing from "./Billing";
 import Cart from "./Cart"
 import Login from "./Login";
 import Signup from "./Signup";
+import Wishlist from "./Wishlist";
 const Master = ()=>{
     return(
         <>
@@ -20,6 +21,7 @@ const Master = ()=>{
                 <Route path="/cart" element={<Cart></Cart>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/signup" element={<Signup></Signup>}></Route>
+                <Route path="/wishlist" element={<Wishlist></Wishlist>}></Route>
                 </Routes>
             </BrowserRouter>
 
