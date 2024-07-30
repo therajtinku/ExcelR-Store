@@ -1,12 +1,18 @@
 body {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    display: flex;
-  }
+}
+.shopping-cart{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+}
   th{
     background-color: #f2f2f2;
     color: #333;
@@ -21,7 +27,7 @@ body {
   .total{
     background-color: #f9f9f9;
     color: #333;
-    text-align: right;
-    padding: 8px;
+    padding: 20px;
+    padding-right: 150px;
     font-weight: bold;
   }

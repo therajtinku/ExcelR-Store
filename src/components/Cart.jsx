@@ -5,11 +5,13 @@ const Cart = () => {
   return (
     <>
     <Navbar></Navbar>
+    
     <div className="cart-container">
       <h1>Shopping Cart</h1>
       {/* Add your cart items here */}
     </div>
-    <div>
+    <div className='shopping-cart'>
+    <div className='product'>
         <table>
             <thead>
                 <tr>
@@ -53,14 +55,14 @@ const Cart = () => {
     </div>
     <div className='total'>
         <h2>TOTAL</h2>
-        <h3>Subtotal: $4998</h3>
-        <h3>Shipping: $100</h3>
-        <h3>Discount: $0</h3>
-        <h3>Tax: $49.96</h3>
-        <h3>Total: $5098</h3>
+        <h3>Subtotal    Rs.4998</h3>
+        <h3>Shipping    $100</h3>
+        <h3>Discount    $0</h3>
+        <h3>Tax         $49.96</h3>
+        <h3>Total       Rs.5098</h3>
         <button style={{backgroundColor:"#925ff0", color:"whitesmoke"}}><a href="#"><i class="fa-solid fa-arrow-right"></i> Buy Now</a></button>
     </div>
-    
+    </div>
     </>
     );
     };
