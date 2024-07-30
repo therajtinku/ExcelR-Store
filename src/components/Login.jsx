@@ -1,8 +1,11 @@
 import React from 'react';
 import './Login.css';
+import Navbar from "./Navbar"
 
 const Login = () => {
     return (
+        <>
+        <Navbar></Navbar>
         <main className="login-page">
             <div className="login-container">
                 <h2>Log in to your account</h2>
@@ -20,6 +23,7 @@ const Login = () => {
                 </div>
             </div>
         </main>
+        </>
     );
 };
 
