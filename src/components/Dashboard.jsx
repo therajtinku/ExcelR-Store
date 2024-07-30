@@ -1,11 +1,9 @@
 import React from 'react';
-import Navbar from './Navbar.jsx';
 import './Dashboard.css';
 
 const Dashboard = () => {
     return (
         <div>
-            <Navbar></Navbar>
             <main>
                 {/* banner section */}
                 <section className="banner">
