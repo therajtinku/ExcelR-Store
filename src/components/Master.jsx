@@ -12,7 +12,6 @@ const Master = ()=>{
     return(
         <>
             <BrowserRouter>
-            {/* <Link to="/prodinfo">comp3</Link> */}
             <Navbar></Navbar>
                 <Routes>
                 <Route path="/" element={<Dashboard></Dashboard>}></Route>
