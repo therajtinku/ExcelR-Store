@@ -1,0 +1,114 @@
+main{
+    margin: 50px 30px;
+}
+.banner img {
+    width: 1450px;
+    height: auto;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.product-carousel, .product-grid, .accessory-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product, .accessory {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.product:hover{
+    scale: 1.02;
+    filter: saturate(120%);
+}
+
+.product img, .accessory img {
+    width: 312px;
+    height: 312px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+/* Exclusive Card */
+.exclusive {
+    /* margin: 20px;  */
+    gap: 10px;
+}
+
+
+
+.exclusive-carousel, .footwear-carousel{
+    overflow-x: scroll;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.product h3, .accessory h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.discount {
+    color: red;
+    font-size: small;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.product button {
+    background-color: #925ff0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #8052d6;
+}
+
+.menscollection img{
+    margin: 40px 10px;
+    width: 1400px;
+    height: auto;
+}
+
+.womencollection img{
+    margin: 0 60px;
+    width: 1300px;
+    height: auto;
+}
+
+.accessory:hover{
+    scale: 1.08;
+    margin-left: 15px;
+    filter: saturate(150%);
+}
